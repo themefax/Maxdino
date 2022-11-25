@@ -1,0 +1,19 @@
+//*==========COUNTER============== 
+<span class="counter">99,99</span>
+
+
+
+//*==========VENOBOX============== 
+<a class="venobox" data-gall="gallery01" href="images/case_1.jpg">
+        <img src="images/case_1.jpg" alt="gallery1" class="img-fluid w-100">
+	<div class="gal_img_overlay">
+             <i class="fas fa-search-plus"></i>
+        </div>
+</a>
+
+<a class="venobox" data-autoplay="true" data-vbtype="video" href="YOUR PLAYABLE VIDEO LINK">
+	<i class=" fas fa-play"></i>
+</a>
+
+
+
