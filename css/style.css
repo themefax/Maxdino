@@ -421,6 +421,176 @@ button {
 
 
 
+/* =============================
+    BARND START
+============================= */
+.TF__barnd{
+    position: relative;
+}
+
+.TF__barnd .TF__brand_img{
+    width: 145px;
+}
+
+.TF__barnd .brand_slider .prevArrow{
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--colorPrimary);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--colorWhite);
+}
+
+.TF__barnd .brand_slider .nextArrow{
+    position: absolute;
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--colorPrimary);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--colorWhite);
+}
+
+
+/* =============================
+    BARND END
+============================= */
+
+
+/* =============================
+    SERVICE START
+============================= */
+.TF__service .TF_service_heading{
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+.TF__service .TF_service_heading h3{
+    font-family: var(--headingFont);
+    color: var(--colorPrimary);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.TF__service .TF_service_heading h2{
+    font-family: var(--headingFont);
+    color: var(--colorBlack);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.TF__service .TF_service_heading p{
+    font-family: var(--paraFont);
+    color: var(--paraColor);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 40px;
+}
+
+.TF__service .TF__service_item{
+    box-shadow: var(--boxShadow);
+    border-radius: 10px;
+    padding: 35px;
+    transition: all linear .3s;
+    margin: 12px 0;
+}
+
+
+.TF__service .TF__service_item:hover{
+    background: var(--colorPrimary);
+}
+
+.TF__service .TF__service_item:hover i,
+.TF__service .TF__service_item:hover h3,
+.TF__service .TF__service_item:hover p,
+.TF__service .TF__service_item:hover ul li,
+.TF__service .TF__service_item:hover a,
+.TF__service .TF__service_item:hover ul li::after,
+.TF__service .TF__service_item:hover .TF_service_item_icon i{
+    color: var(--colorWhite);
+}
+
+.TF__service .TF__service_item .TF_service_item_icon{
+    margin-right: 10px;
+}
+
+.TF__service .TF__service_item .TF_service_item_icon i{
+    color: var(--colorPrimary);
+}
+
+.TF__service .TF__service_item h3{
+    font-family: var(--headingFont);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+}
+
+.TF__service .TF__service_item p {
+	font-family: var(--paraFont);
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--paraColor);
+	margin-top: 15px;
+}
+
+.TF__service .TF__service_item ul{
+    margin-top: 15px;
+}
+
+.TF__service .TF__service_item ul li {
+	position: relative;
+	padding-left: 30px;
+	font-family: var(--paraFont);
+	font-size: 16px;
+	color: var(--paraColor);
+	font-weight: 400;
+	line-height: 26px;
+}
+
+.TF__service .TF__service_item ul li::after{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Font Awesome 5 free';
+    content: '\f058';
+    color: var(--colorPrimary);
+}
+
+.TF__service .TF__service_item a{
+    font-family: var(--paraFont);
+    color: var(--colorBlack);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.TF__service .TF__service_item a i{
+    margin-left: 10px;
+    transition: all linear .3s;
+}
+
+.TF__service .TF__service_item a:hover i{
+    margin-left: 15px;
+}
+
+/* =============================
+    SERVICE END
+============================= */
+
+
+
 
 
 
