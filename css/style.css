@@ -80,6 +80,7 @@ button {
     --paraColor: #646464;
     --colorBlack: #140E1C;
     --colorWhite: #ffffff;
+    --sectionbg: #FCF6FF;
     --paraFont: 'Roboto', sans-serif;
     --headingFont: 'Inter', sans-serif;
     --boxShadow: 2px 3px 50px rgba(188, 188, 188, 0.25);
@@ -140,6 +141,35 @@ button {
     -moz-transform: scaleX(1);
     -ms-transform: scaleX(1);
     -o-transform: scaleX(1);
+}
+
+.TF__service .TF__heading {
+    text-align: center;
+    margin-bottom: 68px;
+}
+
+.TF__service .TF__heading h5 {
+    font-family: var(--headingFont);
+    color: var(--colorPrimary);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.TF__service .TF__heading h2 {
+    font-family: var(--headingFont);
+    color: var(--colorBlack);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.TF__service .TF__heading p {
+    font-family: var(--paraFont);
+    color: var(--paraColor);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 40px;
 }
 
 /* =============================
@@ -376,7 +406,6 @@ button {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    border-bottom: 1px solid #eeeeee94;
 }
 
 .TF__banner div {
@@ -435,6 +464,7 @@ button {
 
 .TF__barnd .TF__brand_img {
     width: 145px;
+    padding: 0 12px;
 }
 
 .TF__barnd .brand_slider .prevArrow {
@@ -480,34 +510,6 @@ button {
 /* =============================
     SERVICE START
 ============================= */
-.TF__service .TF_service_heading {
-    text-align: center;
-    margin-bottom: 68px;
-}
-
-.TF__service .TF_service_heading h3 {
-    font-family: var(--headingFont);
-    color: var(--colorPrimary);
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: capitalize;
-}
-
-.TF__service .TF_service_heading h2 {
-    font-family: var(--headingFont);
-    color: var(--colorBlack);
-    font-size: 40px;
-    font-weight: 700;
-    margin: 10px 0;
-}
-
-.TF__service .TF_service_heading p {
-    font-family: var(--paraFont);
-    color: var(--paraColor);
-    font-size: 16px;
-    font-weight: 400;
-    padding: 0 40px;
-}
 
 .TF__service .TF__service_item {
     box-shadow: var(--boxShadow);
@@ -605,6 +607,78 @@ button {
 
 
 
+/* =============================
+    ABOUT START
+============================= */
+
+.TF__about{
+    margin-top: 108px;
+    padding: 120px 0;
+    background: var(--sectionbg);
+}
+
+.TF__about .TF__about_wraper h5{
+    font-family: var(--headingFont);
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: var(--colorPrimary);
+}
+
+.TF__about .TF__about_wraper h2{
+    font-family: var(--headingFont);
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: capitalize;
+    line-height: 50px;
+    color: var(--colorBlack);
+}
+
+.TF__about .TF__about_wraper p{
+    font-family: var(--paraFont);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--paraColor);
+    line-height: 26px;
+}
+
+.TF__about .TF__in_wraper{
+    display: flex;
+}
+
+.TF__about .TF__in_wraper .TF__in_item{
+    margin: 20px 20px 0px 0px;
+    background-color: var(--colorWhite);
+    padding: 25px;
+    border-radius: 4px;
+}
+
+.TF__about .TF__in_wraper .TF__in_item span{
+    font-family: var(--headingFont);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    color: var(--colorBlack);
+}
+
+.TF__about .TF__in_wraper .TF__in_item span i{
+    color: var(--colorPrimary);
+    margin-right: 8px;
+}
+
+.TF__about .TF__in_wraper .TF__in_item p{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.TF__about a{
+    margin-top: 50px;
+}
+
+/* =============================
+    ABOUT END
+============================= */
 
 
 
