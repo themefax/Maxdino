@@ -143,12 +143,12 @@ button {
     -o-transform: scaleX(1);
 }
 
-.TF__service .TF__heading {
+.TF__heading {
     text-align: center;
     margin-bottom: 68px;
 }
 
-.TF__service .TF__heading h5 {
+.TF__heading h5 {
     font-family: var(--headingFont);
     color: var(--colorPrimary);
     font-size: 18px;
@@ -156,7 +156,7 @@ button {
     text-transform: capitalize;
 }
 
-.TF__service .TF__heading h2 {
+.TF__heading h2 {
     font-family: var(--headingFont);
     color: var(--colorBlack);
     font-size: 40px;
@@ -164,7 +164,7 @@ button {
     margin: 10px 0;
 }
 
-.TF__service .TF__heading p {
+.TF__heading p {
     font-family: var(--paraFont);
     color: var(--paraColor);
     font-size: 16px;
@@ -259,7 +259,7 @@ button {
 
 .TF__droap_menu::-webkit-scrollbar {
     scrollbar-width: thin !important;
-    background: #010f1c;
+    background: var(--paraColor);
     width: 6px;
 }
 
@@ -726,6 +726,189 @@ button {
 /* =============================
     COUNTER END
 ============================= */
+
+
+
+/* =============================
+    WORK START
+============================= */
+
+.TF__work{
+    margin-top: 120px;
+}
+
+.TF__work .TF__work_wraper .TF_work_item_wraper{
+    display: flex;
+}
+
+
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content{
+    width: 480px;
+    margin-top: 90px;
+    position: relative;
+}
+
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content img{
+    position: absolute;
+}
+
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content h4{
+    font-family: var(--headingFont);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+}
+
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content p{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paraColor);
+    margin-top: 20px;
+    line-height: 26px;
+}
+
+
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content ul{
+    margin-top: 20px;
+}
+
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content ul li{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paraColor);
+    position: relative;
+    padding-left: 30px;
+    line-height: 26px;
+}
+
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content ul li::after{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Font Awesome 5 free';
+    content: '\f058';
+    color: var(--colorPrimary);
+}
+
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img{
+    width: 405px;
+}
+
+
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img img{
+    width: 405px;
+}
+
+/* =============================
+    WORK END
+============================= */
+
+
+
+/* =============================
+    PORTFOLIO START
+============================= */
+
+.TF__portfolio .TF_portfolio_item{
+    position: relative;
+    margin: 12px 0;
+}
+
+.TF__portfolio .TF_portfolio_item img{
+    border-radius: 20px;
+}
+
+.TF__portfolio .TF_portfolio_item .overly{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: rgba(113, 22, 218, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    opacity: 0;
+    display: none;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.TF__portfolio .TF_portfolio_item .overly .overly_text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.TF__portfolio .TF_portfolio_item .overly i{
+    width: 65px;
+    height: 65px;
+    background: var(--colorWhite);
+    color: var(--colorPrimary);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 65px;
+    font-size: 20px;
+}
+
+.TF__portfolio .TF_portfolio_item .overly p{
+    font-family: var(--headingFont);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.TF__portfolio .TF_portfolio_item .overly h5{
+    font-family: var(--headingFont);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.TF__portfolio .TF_portfolio_item:hover .overly{
+    opacity: 1;
+    display: inline;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+/* =============================
+    PORTFOLIO END
+============================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
