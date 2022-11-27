@@ -682,10 +682,50 @@ button {
 
 
 
+/* =============================
+    COUNTER START
+============================= */
 
+.TF__counter{
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    padding: 120px 0;
+}
 
+.TF__counter .TF_counter_item{
+    text-align: center;
+}
 
+.TF__counter .TF_counter_item span{
+    font-family: var(--headingFont);
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--colorWhite);
+}
 
+.TF__counter .TF_counter_item span.plus{
+    position: relative;
+    margin-left: -30px;
+}
+
+.TF__counter .TF_counter_item span.plus::after{
+    position: absolute;
+    content: '+';
+}
+
+.TF__counter .TF_counter_item p{
+    font-family: var(--paraFont);
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--colorWhite);
+}
+
+/* =============================
+    COUNTER END
+============================= */
 
 
 
