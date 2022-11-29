@@ -63,6 +63,25 @@ $(function () {
         ]
     });
 
+    //===TESTIMONIAL SLIDER ===
+    
+ $('.TF__p_slider_top').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.TF_p_slider_bottom'
+  });
+  $('.TF_p_slider_bottom').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.TF__p_slider_top',
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+  
+
 
 
     //===COUNTER JS====   

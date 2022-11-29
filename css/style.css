@@ -734,7 +734,7 @@ button {
 ============================= */
 
 .TF__work{
-    margin-top: 120px;
+    padding: 120px;
 }
 
 .TF__work .TF__work_wraper .TF_work_item_wraper{
@@ -796,7 +796,27 @@ button {
 
 .TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img{
     width: 405px;
+    position: relative;
 }
+
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img .shape {
+    position: absolute;
+    left: -616px;
+    top: 169px;
+}
+
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img .shape2 {
+    position: absolute;
+    right: -612px;
+    top: 216px;
+}
+
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img .shape3 {
+    position: absolute;
+    left: -665px;
+    top: 150px;
+}
+
 
 
 .TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img img{
@@ -812,6 +832,10 @@ button {
 /* =============================
     PORTFOLIO START
 ============================= */
+.TF__portfolio{
+    padding: 120px 0;
+    background: #FCF6FF;
+}
 
 .TF__portfolio .TF_portfolio_item{
     position: relative;
@@ -890,32 +914,394 @@ button {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* =============================
-    START
+    TESTIMONIAL START
 ============================= */
 
+.TF__testimonial{
+    padding: 120px 0;
+}
+
+.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item{
+    display: flex !important;
+    justify-content: space-between;
+    background: var(--colorWhite);
+    box-shadow: var(--boxShadow);
+    padding: 40px;
+}
+
+.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .icon,
+.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .star{
+    width: 35%;
+}
+
+.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .icon{
+    position: relative
+}
+
+.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .icon img{
+    position: absolute;
+    width: 80px !important;
+    height: 75px !important;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+
+.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .content{
+    margin-right: 55px;
+}
+
+.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .content h3{
+    font-family: var(--headingFont);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--colorBlack);
+}
+
+.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .content p{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paraColor);
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+
+.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .star i{
+    color: #FFB700;
+    display: inline;
+}
+
+
+.TF__testimonial .TF_p_slider_bottom .TF_p_slider_bottom_item .img{
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--colorPrimary);
+    border-radius: 50%;
+}
+
+.TF__testimonial .TF_p_slider_bottom .TF_p_slider_bottom_item{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 100px;
+}
+
+.TF__testimonial .TF_p_slider_bottom .TF_p_slider_bottom_item .bio {
+    position: absolute;
+    bottom: -60px;
+    text-align: center;
+    left: -60px;
+}
+
+.TF__testimonial .TF_p_slider_bottom .TF_p_slider_bottom_item .bio p{
+    font-family: var(--headingFont);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--colorPrimary);
+    margin-top: 10px;
+}
+
+.TF__testimonial .TF_p_slider_bottom .TF_p_slider_bottom_item .bio span{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: var(--paraColor);
+}
 /* =============================
-    END
+    TESTIMONIAL END
+============================= */
+
+
+
+/* =============================
+    TEAM START
+============================= */
+
+.TF__team{
+    padding: 120px;
+    background: #FCF6FF;
+}
+
+
+.TF__team .TF__team_wraper .img{
+    width: 100%;
+    height: 390px;
+    background: #F1F1F1;
+    padding: 40px 40px 0px 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+
+.TF__team .TF__team_wraper .img .overly{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    background: rgba(173, 96, 236, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.TF__team .TF__team_wraper:hover .img .overly{
+    visibility: visible;
+    opacity: 1;
+}
+
+.TF__team .TF__team_wraper .img .hover_shape {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--colorPrimary);
+    border: 2px solid var(--colorWhite);
+    color: var(--colorWhite);
+    text-align: center;
+    line-height: 41px;
+    transition: all linear .3s;
+}
+
+.TF__team .TF__team_wraper .img .social_media{
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    width: 0px;
+    height: 40px;
+    background: var(--colorPrimary);
+    transition: all linear .3s;
+}
+
+.TF__team .TF__team_wraper:hover .img .social_media{
+    width: 205px;
+}
+
+.TF__team .TF__team_wraper:hover .img .hover_shape{
+    left: 180px;
+}
+
+.TF__team .TF__team_wraper .img .social_media ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 0px 30px;
+}
+
+
+
+.TF__team .TF__team_wraper .img .social_media ul li{
+    line-height: 40px;
+}
+
+.TF__team .TF__team_wraper .img .social_media ul li a{
+    color: var(--colorWhite);
+    transition: all linear .3s;
+    font-size: 0;
+    opacity: 0;
+}
+
+.TF__team .TF__team_wraper:hover .img .social_media ul li a{
+    font-size: 16px;
+    opacity: 1;
+}
+
+.TF__team .TF__team_wraper .img .social_media ul li a:hover{
+    font-size: 24px;
+}
+
+.TF__team .TF__team_wraper .content{
+    background: var(--colorWhite);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px;
+}
+
+.TF__team .TF__team_wraper .content h4{
+    font-family: var(--headingFont);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+}
+
+.TF__team .TF__team_wraper .content p{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--paraColor);
+    margin-top: 5px;
+}
+
+
+/* =============================
+    TEAM END
+============================= */
+
+
+
+/* =============================
+    BLOG START
+============================= */
+
+.TF__blog{
+    margin: 120px 0;
+}
+
+.TF__blog .TF_blog_wraper{
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.TF__blog .TF_blog_wraper .blog_content {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    bottom: -90px;
+    transform: translateX(-50%);
+    background: var(--colorWhite);
+    box-shadow: var(--boxShadow);
+    padding: 35px;
+    border-radius: 10px;
+}
+
+
+.TF__blog .TF_blog_wraper .blog_content p{
+    font-family: var(--headingFont);
+    font-size: 16px;
+    color: var(--colorBlack);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.TF__blog .TF_blog_wraper .blog_content h2{
+    font-family: var(--headingFont);
+    font-size: 20px;
+    color: var(--colorBlack);
+    font-weight: 700;
+}
+
+.TF__blog .TF_blog_wraper .blog_content a{
+    font-family: var(--paraFont);
+    color: var(--colorBlack);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 5px;
+    transition: all linear .3s;
+}
+
+.TF__blog .TF_blog_wraper .blog_content a:hover{
+    color: var(--colorPrimary);
+}
+
+.TF__blog .TF_blog_wraper .blog_content a i {
+    margin-left: 10px;
+    transition: all linear .3s;
+}
+
+.TF__blog .TF_blog_wraper .blog_content a:hover i {
+    margin-left: 15px;
+}
+
+.TF__blog .TF_blog_wraper .blog_content .blog_date {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    background: var(--colorPrimary);
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+.TF__blog .TF_blog_wraper .blog_content .blog_date p{
+    font-family: var(--headingFont);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--colorWhite);
+}
+
+.TF__blog .TF_blog_wraper .blog_content .blog_date span{
+    font-family: var(--headingFont);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--colorWhite);
+}
+
+/* =============================
+    BLOG END
+============================= */
+
+
+
+
+
+
+/* =============================
+    WORKING AREA START
+============================= */
+
+.TF__working_area{
+    padding: 120px;
+    background: var(--sectionbg);
+}
+
+.TF__working_area .TF__warking_area_item{
+    padding: 50px 0;
+    text-align: center;
+    background: var(--colorWhite);
+    border: 1px solid #D4D4D4;
+    transition: all linear .3s;
+}
+
+.TF__working_area .TF__warking_area_item:hover{
+    background: var(--colorPrimary);
+}
+
+.TF__working_area .TF__warking_area_item i{
+    font-size: 35px;
+    color: var(--colorPrimary);
+}
+
+.TF__working_area .TF__warking_area_item p{
+    font-family: var(--paraColor);
+    color:var(--colorBlack);
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.TF__working_area .TF__warking_area_item:hover i,
+.TF__working_area .TF__warking_area_item:hover p{
+    color: var(--colorWhite);
+}
+
+/* =============================
+    WORKING AREA END
+============================= */
+
+
+
+
+
+/* =============================
+    FOOTER START
+============================= */
+
+.TF__footer{
+    padding-top: 110px;
+}
+
+/* =============================
+    FOOTER END
 ============================= */
