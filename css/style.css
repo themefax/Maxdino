@@ -145,7 +145,7 @@ button {
 
 .TF__heading {
     text-align: center;
-    margin-bottom: 68px;
+    /* margin-bottom: 40px; */
 }
 
 .TF__heading h5 {
@@ -167,8 +167,8 @@ button {
 .TF__heading p {
     font-family: var(--paraFont);
     color: var(--paraColor);
-    font-size: 16px;
-    font-weight: 400;
+    /* font-size: 16px; */
+    /* font-weight: 400; */
     padding: 0 40px;
 }
 
@@ -269,7 +269,7 @@ button {
 
 .TF__droap_menu li a {
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     color: var(--colorBlack);
     display: block;
@@ -430,7 +430,6 @@ button {
 .TF__banner_text h1 {
     font-size: 70px;
     font-weight: 700;
-    line-height: 80px;
 }
 
 .TF__banner_text p {
@@ -462,43 +461,70 @@ button {
     position: relative;
 }
 
-.TF__barnd .TF__brand_img {
-    width: 145px;
-    padding: 0 12px;
+.TF__barnd p {
+    font-size: 20px;
+    color: var(--colorBlack);
+    text-align: center;
 }
 
-.TF__barnd .brand_slider .prevArrow {
+.TF__barnd p span {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--colorPrimary);
+    text-transform: uppercase;
+}
+
+
+
+
+.TF__barnd .TF__brand_img {
+    margin: 0px 12px;
+}
+
+.TF__barnd .brand_slider .prevArrow,
+.TF__barnd .brand_slider .nextArrow {
     position: absolute;
-    left: -70px;
+    left: -40px;
     top: 50%;
     transform: translateY(-50%);
     border: 1px solid var(--colorPrimary);
     width: 40px;
     height: 40px;
+    border-radius: 50%;
     text-align: center;
     line-height: 40px;
+    cursor: pointer;
     color: var(--colorPrimary);
     transition: all linear .3s;
+    opacity: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .TF__barnd .brand_slider .nextArrow {
-    position: absolute;
-    right: -70px;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 1px solid var(--colorPrimary);
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    color: var(--colorPrimary);
-    transition: all linear .3s;
+    left: auto;
+    right: -40px;
 }
 
 .TF__barnd .brand_slider .prevArrow:hover,
 .TF__barnd .brand_slider .nextArrow:hover {
     background: var(--colorPrimary);
     color: var(--colorWhite);
+}
+
+.TF__barnd:hover .prevArrow,
+.TF__barnd:hover .nextArrow {
+    opacity: 1;
 }
 
 
@@ -516,7 +542,8 @@ button {
     border-radius: 10px;
     padding: 35px;
     transition: all linear .3s;
-    margin: 12px 0;
+    /* margin: 12px 0; */
+    margin-top: 25px;
 }
 
 
@@ -540,6 +567,7 @@ button {
 
 .TF__service .TF__service_item .TF_service_item_icon i {
     color: var(--colorPrimary);
+    transition: all linear .3s;
 }
 
 .TF__service .TF__service_item h3 {
@@ -548,6 +576,7 @@ button {
     font-weight: 700;
     color: var(--colorBlack);
     text-transform: capitalize;
+    transition: all linear .3s;
 }
 
 .TF__service .TF__service_item p {
@@ -556,6 +585,7 @@ button {
     font-weight: 400;
     color: var(--paraColor);
     margin-top: 15px;
+    transition: all linear .3s;
 }
 
 .TF__service .TF__service_item ul {
@@ -569,7 +599,8 @@ button {
     font-size: 16px;
     color: var(--paraColor);
     font-weight: 400;
-    line-height: 26px;
+    line-height: 30px;
+    transition: all linear .3s;
 }
 
 .TF__service .TF__service_item ul li::after {
@@ -580,6 +611,7 @@ button {
     font-family: 'Font Awesome 5 free';
     content: '\f058';
     color: var(--colorPrimary);
+    transition: all linear .3s;
 }
 
 .TF__service .TF__service_item a {
@@ -588,7 +620,8 @@ button {
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
-    margin-top: 20px;
+    margin-top: 10px;
+    transition: all linear .3s;
 }
 
 .TF__service .TF__service_item a i {
@@ -611,13 +644,11 @@ button {
     ABOUT START
 ============================= */
 
-.TF__about{
-    margin-top: 108px;
-    padding: 120px 0;
+.TF__about {
     background: var(--sectionbg);
 }
 
-.TF__about .TF__about_wraper h5{
+.TF__about .TF__about_wraper h5 {
     font-family: var(--headingFont);
     font-weight: 700;
     font-size: 18px;
@@ -625,35 +656,37 @@ button {
     color: var(--colorPrimary);
 }
 
-.TF__about .TF__about_wraper h2{
+.TF__about .TF__about_wraper h2 {
     font-family: var(--headingFont);
     font-weight: 700;
     font-size: 40px;
     text-transform: capitalize;
     line-height: 50px;
     color: var(--colorBlack);
+    margin-bottom: 15px;
 }
 
-.TF__about .TF__about_wraper p{
+.TF__about .TF__about_wraper p {
     font-family: var(--paraFont);
     font-weight: 400;
     font-size: 16px;
     color: var(--paraColor);
-    line-height: 26px;
+    /* line-height: 26px; */
+    margin-bottom: 30px;
 }
 
-.TF__about .TF__in_wraper{
+.TF__about .TF__in_wraper {
     display: flex;
 }
 
-.TF__about .TF__in_wraper .TF__in_item{
+.TF__about .TF__in_wraper .TF__in_item {
     margin: 20px 20px 0px 0px;
     background-color: var(--colorWhite);
     padding: 25px;
     border-radius: 4px;
 }
 
-.TF__about .TF__in_wraper .TF__in_item span{
+.TF__about .TF__in_wraper .TF__in_item span {
     font-family: var(--headingFont);
     font-size: 16px;
     font-weight: 600;
@@ -661,18 +694,18 @@ button {
     color: var(--colorBlack);
 }
 
-.TF__about .TF__in_wraper .TF__in_item span i{
+.TF__about .TF__in_wraper .TF__in_item span i {
     color: var(--colorPrimary);
     margin-right: 8px;
 }
 
-.TF__about .TF__in_wraper .TF__in_item p{
+.TF__about .TF__in_wraper .TF__in_item p {
     font-family: var(--paraFont);
     font-size: 16px;
     font-weight: 400;
 }
 
-.TF__about a{
+.TF__about a {
     margin-top: 50px;
 }
 
@@ -686,18 +719,17 @@ button {
     COUNTER START
 ============================= */
 
-.TF__counter{
+.TF__counter {
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    padding: 120px 0;
 }
 
-.TF__counter .TF_counter_item{
+.TF__counter .TF_counter_item {
     text-align: center;
 }
 
-.TF__counter .TF_counter_item span{
+.TF__counter .TF_counter_item span {
     font-family: var(--headingFont);
     font-size: 64px;
     font-weight: 700;
@@ -705,17 +737,17 @@ button {
     color: var(--colorWhite);
 }
 
-.TF__counter .TF_counter_item span.plus{
+.TF__counter .TF_counter_item span.plus {
     position: relative;
     margin-left: -30px;
 }
 
-.TF__counter .TF_counter_item span.plus::after{
+.TF__counter .TF_counter_item span.plus::after {
     position: absolute;
     content: '+';
 }
 
-.TF__counter .TF_counter_item p{
+.TF__counter .TF_counter_item p {
     font-family: var(--paraFont);
     font-size: 24px;
     font-weight: 600;
@@ -732,27 +764,22 @@ button {
 /* =============================
     WORK START
 ============================= */
-
-.TF__work{
-    padding: 120px;
-}
-
-.TF__work .TF__work_wraper .TF_work_item_wraper{
+.TF__work .TF__work_wraper .TF_work_item_wraper {
     display: flex;
 }
 
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content{
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content {
     width: 480px;
     margin-top: 90px;
     position: relative;
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content img{
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content img {
     position: absolute;
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content h4{
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content h4 {
     font-family: var(--headingFont);
     font-size: 30px;
     font-weight: 700;
@@ -760,7 +787,7 @@ button {
     color: var(--colorBlack);
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content p{
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content p {
     font-family: var(--paraFont);
     font-size: 16px;
     font-weight: 400;
@@ -770,21 +797,22 @@ button {
 }
 
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content ul{
-    margin-top: 20px;
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content ul {
+    margin-top: 15px;
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content ul li{
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content ul li {
     font-family: var(--paraFont);
     font-size: 16px;
     font-weight: 400;
     color: var(--paraColor);
     position: relative;
     padding-left: 30px;
-    line-height: 26px;
+    /* line-height: 26px; */
+    margin-top: 7px;
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content ul li::after{
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content ul li::after {
     position: absolute;
     left: 0;
     top: 50%;
@@ -794,7 +822,7 @@ button {
     color: var(--colorPrimary);
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img{
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img {
     width: 405px;
     position: relative;
 }
@@ -819,7 +847,7 @@ button {
 
 
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img img{
+.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img img {
     width: 405px;
 }
 
@@ -832,31 +860,30 @@ button {
 /* =============================
     PORTFOLIO START
 ============================= */
-.TF__portfolio{
-    padding: 120px 0;
+.TF__portfolio {
+    /* padding: 120px 0; */
     background: #FCF6FF;
 }
 
-.TF__portfolio .TF_portfolio_item{
+.TF__portfolio .TF_portfolio_item {
     position: relative;
-    margin: 12px 0;
+    margin-top: 25px;
 }
 
-.TF__portfolio .TF_portfolio_item img{
+.TF__portfolio .TF_portfolio_item img {
     border-radius: 20px;
 }
 
-.TF__portfolio .TF_portfolio_item .overly{
+.TF__portfolio .TF_portfolio_item .overly {
     position: absolute;
-    left: 20px;
-    top: 20px;
-    right: 20px;
-    bottom: 20px;
+    left: 30px;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
     background: rgba(113, 22, 218, 0.8);
     border-radius: 20px;
     text-align: center;
     opacity: 0;
-    display: none;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -864,14 +891,20 @@ button {
     -o-transition: all linear .3s;
 }
 
-.TF__portfolio .TF_portfolio_item .overly .overly_text{
+.TF__portfolio .TF_portfolio_item .overly .overly_text {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
-.TF__portfolio .TF_portfolio_item .overly i{
+.TF__portfolio .TF_portfolio_item .overly i {
     width: 65px;
     height: 65px;
     background: var(--colorWhite);
@@ -880,27 +913,38 @@ button {
     text-align: center;
     line-height: 65px;
     font-size: 20px;
+    transition: all linear .3s;
 }
 
-.TF__portfolio .TF_portfolio_item .overly p{
+.TF__portfolio .TF_portfolio_item .overly p {
     font-family: var(--headingFont);
     font-size: 16px;
     font-weight: 500;
     color: var(--colorWhite);
     text-transform: capitalize;
-    margin-top: 10px;
+    margin-top: 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
-.TF__portfolio .TF_portfolio_item .overly h5{
+.TF__portfolio .TF_portfolio_item .overly h5 {
     font-family: var(--headingFont);
     font-size: 24px;
     font-weight: 600;
     color: var(--colorWhite);
     text-transform: capitalize;
-    margin-top: 10px;
+    margin-top: 5px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
-.TF__portfolio .TF_portfolio_item:hover .overly{
+.TF__portfolio .TF_portfolio_item:hover .overly {
     opacity: 1;
     display: inline;
     left: 0;
@@ -908,6 +952,7 @@ button {
     right: 0;
     bottom: 0;
 }
+
 /* =============================
     PORTFOLIO END
 ============================= */
@@ -918,101 +963,181 @@ button {
     TESTIMONIAL START
 ============================= */
 
-.TF__testimonial{
-    padding: 120px 0;
+.TF__testimonial {
+    /* padding: 120px 0; */
 }
 
-.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item{
+.TF__testi_slider_item {
     display: flex !important;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     background: var(--colorWhite);
-    box-shadow: var(--boxShadow);
     padding: 40px;
+    border: 1px solid #eeeeeeb8;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(209, 211, 213, 0.43);
+    margin-bottom: 50px;
+    position: relative;
 }
 
-.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .icon,
-.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .star{
-    width: 35%;
-}
-
-.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .icon{
-    position: relative
-}
-
-.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .icon img{
+.TF__testi_slider_item::after {
     position: absolute;
-    width: 80px !important;
-    height: 75px !important;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 40px solid #f4f4f4;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
-
-.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .content{
-    margin-right: 55px;
+.TF__testi_slider_item .icon {
+    width: 75px;
+    height: 75px;
 }
 
-.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .content h3{
-    font-family: var(--headingFont);
+.TF__testi_slider_item .content {
+    max-width: 77%;
+    border-left: 1px solid #646464;
+    padding-left: 50px;
+    margin-left: 50px;
+}
+
+.TF__testi_slider_item .content h3 {
     font-size: 16px;
     font-weight: 700;
     color: var(--colorBlack);
+    margin-bottom: 15px;
 }
 
-.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .content p{
-    font-family: var(--paraFont);
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--paraColor);
-    line-height: 26px;
-    margin-top: 10px;
-}
+.TF__testi_slider_item .content p {}
 
 
-.TF__testimonial .TF__p_slider_top .TF__p_slider_top_item .star i{
+
+.TF__testi_slider_item .rating {
+    width: 12%;
+    /* background: #eee; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    overflow: hidden;
     color: #FFB700;
-    display: inline;
+    letter-spacing: 5px;
 }
 
 
-.TF__testimonial .TF_p_slider_bottom .TF_p_slider_bottom_item .img{
-    width: 80px;
-    height: 80px;
-    border: 1px solid var(--colorPrimary);
-    border-radius: 50%;
-}
 
-.TF__testimonial .TF_p_slider_bottom .TF_p_slider_bottom_item{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.TF__testi_slider_bottom {
     position: relative;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 100px;
 }
 
-.TF__testimonial .TF_p_slider_bottom .TF_p_slider_bottom_item .bio {
+.TF__testi_slider_bottom::after,
+.TF__testi_slider_bottom::before {
     position: absolute;
-    bottom: -60px;
-    text-align: center;
-    left: -60px;
+    content: "";
+    background: var(--colorWhite);
+    width: 60px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-.TF__testimonial .TF_p_slider_bottom .TF_p_slider_bottom_item .bio p{
-    font-family: var(--headingFont);
-    font-size: 18px;
+.TF__testi_slider_bottom::before {
+    left: auto;
+    right: 0;
+}
+
+.TF__testi_slider_bottom_item {
+    text-align: center;
+}
+
+.TF__testi_slider_bottom_item .img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #E8CCFF;
+    margin: 0 auto;
+    margin-top: 15px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.TF__testi_slider_bottom_item .bio {
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.TF__testi_slider_bottom_item .bio h4 {
+    font-size: 16px;
     font-weight: 700;
     text-transform: capitalize;
     color: var(--colorPrimary);
-    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-.TF__testimonial .TF_p_slider_bottom .TF_p_slider_bottom_item .bio span{
-    font-family: var(--paraFont);
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 10px;
-    color: var(--paraColor);
+.TF__testi_slider_bottom_item .bio p {
+    text-transform: capitalize;
 }
+
+
+
+
+
+
+.TF__testimonial .slick-center .img {
+    width: 100px;
+    height: 100px;
+    border-color: var(--colorPrimary);
+    margin-top: 0;
+}
+
+.TF__testimonial .slick-center .bio {
+    opacity: 1;
+}
+
+
+
+
+
 /* =============================
     TESTIMONIAL END
 ============================= */
@@ -1023,39 +1148,27 @@ button {
     TEAM START
 ============================= */
 
-.TF__team{
-    padding: 120px;
+.TF__team {
+    /* padding: 120px; */
     background: #FCF6FF;
 }
 
-
-.TF__team .TF__team_wraper .img{
+.TF__team .TF__team_wraper .img {
     width: 100%;
-    height: 390px;
+    height: 350px;
     background: #F1F1F1;
-    padding: 40px 40px 0px 40px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     position: relative;
-}
-
-.TF__team .TF__team_wraper .img .overly{
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    position: absolute;
-    background: rgba(173, 96, 236, 0.5);
-    visibility: hidden;
-    opacity: 0;
     transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
-.TF__team .TF__team_wraper:hover .img .overly{
-    visibility: visible;
-    opacity: 1;
+.TF__team .TF__team_wraper:hover .img {
+    background: rgba(173, 96, 236, 0.5);
 }
 
 .TF__team .TF__team_wraper .img .hover_shape {
@@ -1072,9 +1185,13 @@ button {
     text-align: center;
     line-height: 41px;
     transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
-.TF__team .TF__team_wraper .img .social_media{
+.TF__team .TF__team_wraper .img .social_media {
     position: absolute;
     left: 0px;
     bottom: 30px;
@@ -1084,50 +1201,45 @@ button {
     transition: all linear .3s;
 }
 
-.TF__team .TF__team_wraper:hover .img .social_media{
+.TF__team .TF__team_wraper:hover .img .social_media {
     width: 205px;
 }
 
-.TF__team .TF__team_wraper:hover .img .hover_shape{
+.TF__team .TF__team_wraper:hover .img .hover_shape {
     left: 180px;
 }
 
-.TF__team .TF__team_wraper .img .social_media ul{
+.TF__team .TF__team_wraper .img .social_media ul {
     display: flex;
     justify-content: space-between;
     margin: 0 50px 0px 30px;
 }
 
-
-
-.TF__team .TF__team_wraper .img .social_media ul li{
+.TF__team .TF__team_wraper .img .social_media ul li {
     line-height: 40px;
 }
 
-.TF__team .TF__team_wraper .img .social_media ul li a{
+.TF__team .TF__team_wraper .img .social_media ul li a {
     color: var(--colorWhite);
     transition: all linear .3s;
     font-size: 0;
     opacity: 0;
 }
 
-.TF__team .TF__team_wraper:hover .img .social_media ul li a{
+.TF__team .TF__team_wraper:hover .img .social_media ul li a {
     font-size: 16px;
     opacity: 1;
 }
 
-.TF__team .TF__team_wraper .img .social_media ul li a:hover{
-    font-size: 24px;
-}
-
-.TF__team .TF__team_wraper .content{
+.TF__team .TF__team_wraper .content {
     background: var(--colorWhite);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 30px;
+    box-shadow: var(--boxShadow);
 }
 
-.TF__team .TF__team_wraper .content h4{
+.TF__team .TF__team_wraper .content h4 {
     font-family: var(--headingFont);
     font-size: 16px;
     font-weight: 700;
@@ -1135,12 +1247,10 @@ button {
     color: var(--colorBlack);
 }
 
-.TF__team .TF__team_wraper .content p{
+.TF__team .TF__team_wraper .content p {
     font-family: var(--paraFont);
-    font-size: 16px;
-    font-weight: 400;
-    color: var(--paraColor);
     margin-top: 5px;
+    text-transform: capitalize;
 }
 
 
@@ -1154,84 +1264,88 @@ button {
     BLOG START
 ============================= */
 
-.TF__blog{
-    margin: 120px 0;
-}
+.TF__blog {}
 
-.TF__blog .TF_blog_wraper{
+.TF__blog .TF_blog_wraper {
     height: 300px;
     width: 100%;
     position: relative;
 }
 
 .TF__blog .TF_blog_wraper .blog_content {
-    width: 90%;
+    width: 94%;
     position: absolute;
     left: 50%;
     bottom: -90px;
     transform: translateX(-50%);
     background: var(--colorWhite);
     box-shadow: var(--boxShadow);
-    padding: 35px;
+    padding: 20px;
     border-radius: 10px;
 }
 
 
-.TF__blog .TF_blog_wraper .blog_content p{
+.TF__blog .TF_blog_wraper .blog_content p {
     font-family: var(--headingFont);
     font-size: 16px;
     color: var(--colorBlack);
-    font-weight: 600;
     text-transform: capitalize;
 }
 
-.TF__blog .TF_blog_wraper .blog_content h2{
+.TF__blog .TF_blog_wraper .blog_content .title {
     font-family: var(--headingFont);
-    font-size: 20px;
+    font-size: 19px;
     color: var(--colorBlack);
     font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    display: block;
 }
 
-.TF__blog .TF_blog_wraper .blog_content a{
+.TF__blog .TF_blog_wraper .blog_content .title:hover {
+    color: var(--colorPrimary);
+}
+
+.TF__blog .TF_blog_wraper .blog_content .read_btn {
     font-family: var(--paraFont);
     color: var(--colorBlack);
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     transition: all linear .3s;
 }
 
-.TF__blog .TF_blog_wraper .blog_content a:hover{
+.TF__blog .TF_blog_wraper .blog_content .read_btn:hover {
     color: var(--colorPrimary);
 }
 
-.TF__blog .TF_blog_wraper .blog_content a i {
+.TF__blog .TF_blog_wraper .blog_content .read_btn i {
     margin-left: 10px;
     transition: all linear .3s;
 }
 
-.TF__blog .TF_blog_wraper .blog_content a:hover i {
+.TF__blog .TF_blog_wraper .blog_content .read_btn:hover i {
     margin-left: 15px;
 }
 
 .TF__blog .TF_blog_wraper .blog_content .blog_date {
     position: absolute;
-    top: -30px;
+    top: -22px;
     right: 20px;
     background: var(--colorPrimary);
-    padding: 10px 25px;
+    padding: 5px 30px;
     border-radius: 50px;
 }
 
-.TF__blog .TF_blog_wraper .blog_content .blog_date p{
+.TF__blog .TF_blog_wraper .blog_content .blog_date p {
     font-family: var(--headingFont);
     font-size: 20px;
     font-weight: 700;
     color: var(--colorWhite);
 }
 
-.TF__blog .TF_blog_wraper .blog_content .blog_date span{
+.TF__blog .TF_blog_wraper .blog_content .blog_date span {
     font-family: var(--headingFont);
     font-size: 14px;
     font-weight: 600;
@@ -1251,39 +1365,60 @@ button {
     WORKING AREA START
 ============================= */
 
-.TF__working_area{
-    padding: 120px;
+.TF__working_area {
     background: var(--sectionbg);
 }
 
-.TF__working_area .TF__warking_area_item{
+.TF__working_area .TF__warking_area_item {
+    width: 25%;
     padding: 50px 0;
     text-align: center;
     background: var(--colorWhite);
-    border: 1px solid #D4D4D4;
+    border-bottom: 1px solid #D4D4D4;
+    border-right: 1px solid #D4D4D4;
     transition: all linear .3s;
 }
 
-.TF__working_area .TF__warking_area_item:hover{
+.TF__working_area .TF__warking_area_item:hover {
     background: var(--colorPrimary);
 }
 
-.TF__working_area .TF__warking_area_item i{
+.TF__working_area .TF__warking_area_item i {
     font-size: 35px;
     color: var(--colorPrimary);
+    transition: all linear .3s;
+    width: auto;
+    max-height: 35px;
+    display: block;
 }
 
-.TF__working_area .TF__warking_area_item p{
-    font-family: var(--paraColor);
-    color:var(--colorBlack);
-    font-size: 20px;
+.TF__working_area .TF__warking_area_item p {
+    font-family: var(--paraFont);
+    color: var(--colorBlack);
+    font-size: 16px;
     text-transform: capitalize;
     margin-top: 10px;
+    font-weight: 600;
+    transition: all linear .3s;
 }
 
 .TF__working_area .TF__warking_area_item:hover i,
-.TF__working_area .TF__warking_area_item:hover p{
+.TF__working_area .TF__warking_area_item:hover p {
     color: var(--colorWhite);
+}
+
+.TF__working_area ul {}
+
+.TF__working_area ul li:nth-child(4),
+.TF__working_area ul li:nth-child(8) {
+    border-right: 0;
+}
+
+.TF__working_area ul li:nth-child(5),
+.TF__working_area ul li:nth-child(6),
+.TF__working_area ul li:nth-child(7),
+.TF__working_area ul li:nth-child(8) {
+    border-bottom: 0;
 }
 
 /* =============================
@@ -1298,7 +1433,7 @@ button {
     FOOTER START
 ============================= */
 
-.TF__footer{
+.TF__footer {
     padding-top: 110px;
     background-size: cover;
     background-position: center;
@@ -1306,7 +1441,7 @@ button {
 }
 
 .TF__footer .contact h3,
-.TF__footer .newslatter h3{
+.TF__footer .newslatter h3 {
     font-family: var(--headingFont);
     font-size: 24px;
     font-weight: 700;
@@ -1314,18 +1449,16 @@ button {
     color: var(--colorWhite);
 }
 
-.TF__footer .newslatter p{
+.TF__footer .newslatter p {
     font-family: var(--paraFont);
-    font-size: 16px;
-    font-weight: 400;
     color: var(--colorWhite);
 }
 
-.TF__footer .contact .contact_info_wraper{
+.TF__footer .contact .contact_info_wraper {
     margin-top: 40px;
 }
 
-.TF__footer .contact .contact_info h5{
+.TF__footer .contact .contact_info h5 {
     font-family: var(--headingFont);
     font-size: 16px;
     font-weight: 600;
@@ -1333,24 +1466,26 @@ button {
     color: var(--colorWhite);
 }
 
-.TF__footer .contact .contact_info h5 i{
+.TF__footer .contact .contact_info h5 i {
     margin-right: 10px;
 }
 
-.TF__footer .contact .contact_info p{
+.TF__footer .contact .contact_info p {
     font-family: var(--paraFont);
-    font-size: 16px;
-    font-weight: 400;
+    /* font-size: 16px; */
+    /* font-weight: 400; */
     color: var(--colorWhite);
-    margin-top: 5px;
+    margin-top: 7px;
 }
 
-.TF__footer .newslatter form{
+.TF__footer .newslatter form {
     position: relative;
     margin-top: 40px;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
-.TF__footer .newslatter form input{
+.TF__footer .newslatter form input {
     width: 100%;
     height: 45px;
     border-radius: 2px;
@@ -1363,54 +1498,65 @@ button {
     right: 0;
     background: var(--colorPrimary);
     color: var(--colorWhite);
-    border-radius: 2px;
+    border-radius: 0;
+    transition: all linear .3s;
 }
 
-.TF__footer .footer_middle{
+.TF__footer .newslatter form button:hover {
+    background: #AC60EC;
+}
+
+.TF__footer .footer_middle {
     margin-top: 85px;
 }
 
-.TF__footer .footer_middle .about_maxdino p{
+.TF__footer .footer_middle .about_maxdino p {
     font-family: var(--paraFont);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
+    /* font-size: 16px; */
+    /* font-weight: 400; */
+    /* line-height: 26px; */
     color: var(--colorWhite);
     margin-top: 30px;
 }
 
-.TF__footer .footer_middle .about_maxdino .footer_social h4{
+.TF__footer .footer_middle .about_maxdino .footer_social h4 {
     font-family: var(--headingFont);
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 600;
     color: var(--colorPrimary);
-    margin-top: 30px;
+    margin-top: 55px;
 }
 
-.TF__footer .footer_middle .about_maxdino .footer_social ul{
+.TF__footer .footer_middle .about_maxdino .footer_social ul {
     display: flex;
     margin-top: 15px;
 }
 
-.TF__footer .footer_middle .about_maxdino .footer_social ul li a{
+.TF__footer .footer_middle .about_maxdino .footer_social ul li a {
     width: 35px;
     height: 35px;
-    background: var(--colorPrimary);
+    background: #ffffff14;
     border-radius: 50%;
     color: var(--colorWhite);
     text-align: center;
-    line-height: 35px;
-    margin-right: 15px;
+    line-height: 38px;
+    margin-right: 10px;
+    transition: all linear .3s;
+}
+
+.TF__footer .footer_middle .about_maxdino .footer_social ul li a:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
 }
 
 .TF__footer .footer_middle .footer_menu ul,
-.TF__footer .footer_middle .message_box form{
-    margin-top: 35px;
+.TF__footer .footer_middle .message_box form {
+    margin-top: 45px;
 }
 
 .TF__footer .footer_middle .footer_menu h3,
-.TF__footer .footer_middle .message_box h3{
+.TF__footer .footer_middle .message_box h3 {
     font-family: var(--headingFont);
     font-size: 24px;
     font-weight: 700;
@@ -1418,34 +1564,35 @@ button {
     color: var(--colorWhite);
 }
 
-.TF__footer .footer_middle .footer_menu ul li a{
+.TF__footer .footer_middle .footer_menu ul li a {
     font-family: var(--paraFont);
     font-size: 16px;
     font-weight: 400;
+    display: block;
     color: var(--colorWhite);
     text-transform: capitalize;
     transition: all linear .3s;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.TF__footer .footer_middle .footer_menu ul li a:hover{
+.TF__footer .footer_middle .footer_menu ul li a:hover {
     color: var(--colorPrimary);
 }
 
-.TF__footer .footer_middle .message_box form .form_group{
+.TF__footer .footer_middle .message_box form .form_group {
     display: flex;
 }
 
-.TF__footer .footer_middle .message_box form .form_group input{
+.TF__footer .footer_middle .message_box form .form_group input {
     height: 45px;
     border-radius: 2px;
 }
 
-.TF__footer .footer_middle .message_box form textarea{
+.TF__footer .footer_middle .message_box form textarea {
     margin-top: 20px;
 }
 
-.TF__footer .footer_middle .message_box form button{
+.TF__footer .footer_middle .message_box form button {
     font-family: var(--headingFont);
     font-size: 18px;
     font-weight: 700;
@@ -1453,25 +1600,25 @@ button {
     margin-top: 20px;
 }
 
-.TF__footer .footer_middle .message_box form .form_group input:first-child{
+.TF__footer .footer_middle .message_box form .form_group input:first-child {
     margin-right: 10px;
 }
 
-.TF__footer .footer_middle .message_box form .form_group input:last-child{
+.TF__footer .footer_middle .message_box form .form_group input:last-child {
     margin-left: 10px;
 }
 
-.TF__footer .footer_bottom{
+.TF__footer .footer_bottom {
     text-align: center;
     margin-top: 75px;
     padding: 45px 0;
     border-top: 1px solid var(--paraColor);
 }
 
-.TF__footer .footer_bottom p{
+.TF__footer .footer_bottom p {
     font-family: var(--headingFont);
     font-size: 18px;
-    font-weight: 400;
+    /* font-weight: 400; */
     color: var(--colorWhite);
 }
 
