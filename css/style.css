@@ -764,22 +764,8 @@ button {
 /* =============================
     WORK START
 ============================= */
-.TF__work .TF__work_wraper .TF_work_item_wraper {
-    display: flex;
-}
 
-
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content {
-    width: 480px;
-    margin-top: 90px;
-    position: relative;
-}
-
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content img {
-    position: absolute;
-}
-
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content h4 {
+.TF__work  .TF_work_content h4 {
     font-family: var(--headingFont);
     font-size: 30px;
     font-weight: 700;
@@ -787,7 +773,7 @@ button {
     color: var(--colorBlack);
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content p {
+.TF__work .TF_work_content p {
     font-family: var(--paraFont);
     font-size: 16px;
     font-weight: 400;
@@ -797,22 +783,21 @@ button {
 }
 
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content ul {
+.TF__work .TF_work_content ul {
     margin-top: 15px;
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content ul li {
+.TF__work .TF_work_content ul li {
     font-family: var(--paraFont);
     font-size: 16px;
     font-weight: 400;
     color: var(--paraColor);
     position: relative;
     padding-left: 30px;
-    /* line-height: 26px; */
     margin-top: 7px;
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_content ul li::after {
+.TF__work .TF_work_content ul li::after {
     position: absolute;
     left: 0;
     top: 50%;
@@ -822,34 +807,32 @@ button {
     color: var(--colorPrimary);
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img {
+
+.TF__work .TF_work_img {
     width: 405px;
     position: relative;
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img .shape {
+.TF__work .TF_work_img .shape {
     position: absolute;
     left: -616px;
     top: 169px;
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img .shape2 {
+.TF__work .TF_work_img .shape2 {
     position: absolute;
     right: -612px;
     top: 216px;
 }
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img .shape3 {
+.TF__work .TF_work_img .shape3 {
     position: absolute;
-    left: -665px;
-    top: 150px;
+    left: -650px;
+    top: 209px;
 }
 
 
 
-.TF__work .TF__work_wraper .TF_work_item_wraper .TF_work_img img {
-    width: 405px;
-}
 
 /* =============================
     WORK END
