@@ -1608,3 +1608,382 @@ button {
 /* =============================
     FOOTER END
 ============================= */
+
+
+/* ============================ */
+/* =============================
+        HOME PAGE TWO START
+============================= */
+/* ============================ */
+
+
+/* =============================
+    MENU START
+============================= */
+
+.main_menu_2{
+    background: var(--colorWhite);
+}
+
+/* =============================
+    MENU END
+============================= */
+
+
+
+/* =============================
+    MENU START
+============================= */
+
+.TF__banner2 {
+    padding: 215px 0;
+    margin-top: 90px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.TF__banner2 .TF__banner2_content h5{
+    font-family: var(--headingFont);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--colorWhite);
+}
+
+.TF__banner2 .TF__banner2_content h1{
+    font-family: var(--headingFont);
+    font-size: 75px;
+    font-weight: 700;
+    color: var(--colorWhite);
+}
+
+.TF__banner2 .TF__banner2_content p{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--colorWhite);
+}
+
+.TF__banner2 .TF__banner2_content a{
+    font-family: var(--headingFont);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--colorWhite);
+    padding: 15px 45px;
+    background: rgb(172,96,236);
+    background: linear-gradient(90deg, rgba(172,96,236,1) 0%, rgba(172,96,236,1) 15%, rgba(113,22,219,1) 100%);
+    border-radius: 30px;
+    margin-top: 60px;
+    transition: all 4s ease;
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease;
+    -ms-transition: all 4s ease;
+    -o-transition: all 4s ease;
+    transition: all 4s ease;
+
+}
+
+.TF__banner2 .TF_banner2_content a:hover{
+    background: rgb(113,22,219);
+    background: linear-gradient(90deg, rgba(113,22,219,1) 0%, rgba(113,22,219,1) 15%, rgba(172,96,236,1) 100%);
+}
+
+/* =============================
+    MENU END
+============================= */
+
+
+
+
+/* =============================
+    SERVICE START
+============================= */
+
+.TF__service2{
+    background: var(--colorPrimary);
+}
+
+.TF__service2 .TF__heading h5,
+.TF__service2 .TF__heading h2,
+.TF__service2 .TF__heading p{
+    color: var(--colorWhite);
+}
+
+.TF__service2 .TF__service_item{
+    background: transparent;
+    border: 1px solid var(--colorWhite);
+}
+
+.TF__service2 .TF__service_item:hover{
+    background: var(--colorWhite);
+}
+
+.TF__service2 .TF__service_item .TF_service_item_icon i,
+.TF__service2 .TF__service_item .TF_service_item_text h3,
+.TF__service2 .TF__service_item .TF_service_item_text p,
+.TF__service2 .TF__service_item .TF_service_item_text a{
+    color: var(--colorWhite);
+}
+
+.TF__service2 .TF__service_item:hover .TF_service_item_icon i,
+.TF__service2 .TF__service_item:hover .TF_service_item_text h3{
+    color: var(--colorPrimary);
+}
+
+.TF__service2 .TF__service_item:hover .TF_service_item_text p{
+    color: var(--paraColor);
+}
+
+.TF__service2 .TF__service_item:hover .TF_service_item_text a,
+.TF__service2 .TF__service_item:hover .TF_service_item_text i{
+    color: var(--colorBlack);
+}
+
+
+
+/* =============================
+    SERVICE END
+============================= */
+
+
+
+/* =============================
+    WHY CHOSE US START
+============================= */
+
+.TF__why_chose_us .TF__wcu_item{
+    padding: 30px;
+    background: var(--sectionbg);
+    border-radius: 5px;
+    margin-bottom: 24px;
+}
+
+.TF__why_chose_us .TF__wcu_item h4{
+    font-family: var(--headingFont);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+}
+
+.TF__why_chose_us .TF__wcu_item h4 i{
+    color: var(--colorPrimary);
+    margin-right: 10px;
+}
+
+.TF__why_chose_us .TF__wcu_item p{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    color: var(--paraColor);
+    margin-top: 15px;
+}
+
+.TF__why_chose_us .TF__wcu_img {
+    margin-top: 40px;
+}
+
+/* =============================
+    WHY CHOSE US END
+============================= */
+
+
+
+/* =============================
+    WORK START
+============================= */
+.TF__work2 .TF__work_item{
+    position: relative;
+    border: 1px solid var(--colorPrimary);
+    border-radius: 50%;
+    border-style: dashed;
+    border-width: 2px;
+    width: 300px;
+    height: 300px;
+}
+
+.TF__work2 .TF__work_item h4 {
+    font-family: var(--headingFont);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    bottom: -50px;
+}
+
+.TF__work2 .TF__work_item .TF__work_overly{
+    background: var(--colorWhite);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+
+.TF__work2 .TF__work_item:hover .TF__work_overly{
+    visibility: visible;
+    opacity: 1;
+}
+
+.TF__work2 .TF__work_item .TF__work_overly h3{
+    font-family: var(--headingFont);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--colorPrimary);
+    text-align: center;
+    margin-top: 90px;
+}
+
+.TF__work2 .TF__work_item .TF__work_overly p{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--paraColor);
+    margin-top: 10px;
+    padding: 0 30px;
+}
+
+.TF__work2 .TF__work_item .TF__work_img{
+    padding: 45px;
+}
+
+/* =============================
+    WORK END
+============================= */
+
+
+
+/* =============================
+    TESTIMONIAL START
+============================= */
+
+.TF_home2_slider_wraper {
+    padding: 40px;
+    background: var(--colorWhite);
+    border-radius: 5px;
+    box-shadow: var(--boxShadow);
+    margin: 12px;
+}
+
+.TF__home2_testimonial_slider .TF__test_user_info .img{
+    border: 1px solid var(--colorPrimary);
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.TF__home2_testimonial_slider .TF__test_user_info .TF__test_user_text h3{
+    font-family: var(--headingFont);
+    font-size: 18px;
+    color: var(--colorPrimary);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.TF__home2_testimonial_slider .TF__test_user_info .TF__test_user_text{
+    margin-left: 20px;
+}
+
+.TF__home2_testimonial_slider .TF__test_user_info .TF__test_user_text p{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    color: var(--paraColor);
+    font-weight: 400;
+}
+
+.TF_home2_slider_wraper h2{
+    font-family: var(--headingFont);
+    font-size: 16px;
+    color: var(--colorBlack);
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 25px;
+}
+
+.TF_home2_slider_wraper>p{
+    font-family: var(--paraFont);
+    font-size: 16px;
+    color: var(--paraColor);
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 25px;
+}
+
+.TF__home2_testimonial_slider .TF__test_user_info .TF__test_rating{
+    margin-left: auto;
+}
+
+
+.TF__home2_testimonial_slider .TF__test_user_info .TF__test_rating i{
+    color: #FFB700;
+}
+
+
+.TF__home2_testimonial_slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.TF__home2_testimonial_slider .slick-dots li{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 7.5px;
+    position: relative;
+}
+
+.TF__home2_testimonial_slider .slick-dots li::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--colorPrimary);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.TF__home2_testimonial_slider .slick-dots li.slick-active{
+    background: var(--colorPrimary);
+}
+
+/* =============================
+    TESTIMONIAL END
+============================= */
+
+
+
+
+
+/* =============================
+     START
+============================= */
+
+
+
+/* =============================
+     END
+============================= */
+
+
+/* ============================ */
+/* =============================
+        HOME PAGE TWO END
+============================= */
+/* ============================ */
