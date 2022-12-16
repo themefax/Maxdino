@@ -1987,3 +1987,70 @@ button {
         HOME PAGE TWO END
 ============================= */
 /* ============================ */
+
+
+
+
+
+/* ============================ */
+/* =============================
+        ABOUT US START
+============================= */
+/* ============================ */
+
+.TF__breadcrumb{
+    padding: 170px 0;
+    margin-top: 90px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.TF__breadcrumb .breadcrumb{
+    text-align: center;
+    display: inline-flex;
+}
+
+.TF__breadcrumb .breadcrumb .breadcrumb-item:first-child a{
+    color: #DFB9FF;
+    padding-right: 30px;
+    position: relative;
+}
+
+.TF__breadcrumb .breadcrumb .breadcrumb-item:first-child a::after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: '\f30b';
+    font-family: "Font Awesome 5 Free";
+}
+
+.TF__breadcrumb .breadcrumb .breadcrumb-item a{
+    font-family: var(--paraFont);
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: var(--colorWhite);
+}
+
+.TF__breadcrumb .TF__page_name p{
+    font-family: var(--paraFont);
+    font-weight: 700;
+    font-size: 70px;
+    text-transform: capitalize;
+    color: var(--colorWhite);
+}
+
+.TF__breadcrumb .breadcrumb-item+.breadcrumb-item::before{
+    display: none;
+}
+
+
+
+/* ============================ */
+/* =============================
+        ABOUT US END
+============================= */
+/* ============================ */
