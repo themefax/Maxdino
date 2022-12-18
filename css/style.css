@@ -1994,9 +1994,14 @@ button {
 
 /* ============================ */
 /* =============================
-        ABOUT US START
+        ABOUT US PAGE START
 ============================= */
 /* ============================ */
+
+
+/* =============================
+        BREADCRUMB START
+============================= */
 
 .TF__breadcrumb{
     padding: 170px 0;
@@ -2047,10 +2052,51 @@ button {
     display: none;
 }
 
+/* =============================
+        BREADCRUMB END
+============================= */
+
+
+/* =============================
+        SERVICE START
+============================= */
+
+.TF__services .nav{
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+}
+
+.TF__services .nav .nav-item .nav-link{
+    font-family: var(--headingFont);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    padding: 10px 40px;
+    border: none;
+    background: var(--sectionbg);
+    border-radius: 60px;
+}
+.TF__services .nav .nav-item .nav-link.active{
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.TF__Services .tab-content .tab-pane img{
+    width: 130px !important;
+    height: 130px !important;
+}
+
+/* =============================
+        SERVICE END
+============================= */
+
+
 
 
 /* ============================ */
 /* =============================
-        ABOUT US END
+        ABOUT US PAGE END
 ============================= */
 /* ============================ */
