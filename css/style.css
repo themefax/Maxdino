@@ -2083,9 +2083,14 @@ button {
     color: var(--colorWhite);
 }
 
-.TF__Services .tab-content .tab-pane img{
+.TF__services .tab-content .tab-pane .row .col-xl-3{
+    text-align: center;
+}
+
+.TF__services .tab-content .tab-pane img {
     width: 130px !important;
     height: 130px !important;
+    margin-bottom: 60px;
 }
 
 /* =============================
